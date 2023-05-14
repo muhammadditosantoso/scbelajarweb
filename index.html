@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Vue.JS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        Angka 1 = <b v-text="angka1"></b> <br>
+        Angka 2 = <b v-text="angka2"></b> <br><br>
+        <table border="1">
+            <form>
+                <tr>
+                    <th> Operasi</th>
+                    <th>Hasil</th>
+                </tr>
+                <tr>
+                    <td>Penjumlahan </td>
+                    <td><b v-text="angka1 + angka2"></b> <br></td>
+                </tr>
+                <tr>
+                    <td>pengurangan</td>
+                    <td><b v-text="angka1 - angka2"></b> <br></td>
+                </tr>
+                <tr>
+                    <td>perkalian</td>
+                    <td><b v-text="angka1 * angka2"></b> <br></td>
+                </tr>
+                <tr>
+                    <td>Pembagian</td>
+                    <td><b v-text="angka1 / angka2"></b> <br></td>
+                </tr>
+            </form>
+        </table>
+
+    </div>  
+
+    <script src="Vue.min.js"></script>
+    <script src="apps.js"></script>
+</body>
+</html>
